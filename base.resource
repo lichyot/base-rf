@@ -1,8 +1,10 @@
 *** Settings ***
 
 ### Biblioteca
-Library    AppiumLibrary    timeout=30
 Library    String
+Library    YamlLib
+Library    DebugLibrary
+Library    AppiumLibrary    timeout=30
 
 ### Utils
 Resource    resource/utils/openApp.resource

@@ -18,5 +18,6 @@ Select Search Video
     Set Test Variable    ${speaker}
     Set Test Variable    ${title}
 
-    Hide Keyboard
-    Click Element    ${search.${PLATFORM_NAME}.resultSearch}
+    # Hide Keyboard
+    Click Element    ${search.${PLATFORM_NAME}.resultText}
+    Click Element    ${search.${PLATFORM_NAME}.resultText}

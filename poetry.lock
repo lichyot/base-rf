@@ -205,6 +205,21 @@ files = [
 attrs = ">=19.2.0"
 
 [[package]]
+name = "prompt-toolkit"
+version = "3.0.51"
+description = "Library for building powerful interactive command lines in Python"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "prompt_toolkit-3.0.51-py3-none-any.whl", hash = "sha256:52742911fde84e2d423e2f9a4cf1de7d7ac4e51958f648d9540e0fb8db077b07"},
+    {file = "prompt_toolkit-3.0.51.tar.gz", hash = "sha256:931a162e3b27fc90c86f1b48bb1fb2c528c2761475e57c9c06de13311c7b54ed"},
+]
+
+[package.dependencies]
+wcwidth = "*"
+
+[[package]]
 name = "pycparser"
 version = "2.22"
 description = "C parser in Python"
@@ -325,6 +340,36 @@ selenium = ">=4.0,<=4.16"
 six = ">=1.10.0"
 
 [[package]]
+name = "robotframework-debuglibrary"
+version = "2.5.0"
+description = "RobotFramework debug library and an interactive shell"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "robotframework-debuglibrary-2.5.0.tar.gz", hash = "sha256:c8e135c7561721d36210d6f59a09b7538064367e82d8a3be67cb87088cf9cba7"},
+    {file = "robotframework_debuglibrary-2.5.0-py3-none-any.whl", hash = "sha256:a2bfb2636ead7be440c224317891b4b406a9a71d84b26924031ccf3791a00b96"},
+]
+
+[package.dependencies]
+prompt-toolkit = ">=3"
+robotframework = ">=4"
+
+[[package]]
+name = "robotframework-yamllibrary"
+version = "0.2.8"
+description = "Yaml utility library for Robot Framework"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "robotframework-yamllibrary-0.2.8.zip", hash = "sha256:9a055c0465c6805f85ef7f918d5cefa4e6516f9a85152ac49c33e4c3c278b331"},
+]
+
+[package.dependencies]
+PyYAml = ">=3.0"
+
+[[package]]
 name = "selenium"
 version = "4.16.0"
 description = ""
@@ -437,6 +482,18 @@ socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
 zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
+name = "wcwidth"
+version = "0.2.13"
+description = "Measures the displayed width of unicode strings in a terminal"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "wcwidth-0.2.13-py2.py3-none-any.whl", hash = "sha256:3da69048e4540d84af32131829ff948f1e022c1c6bdb8d6102117aac784f6859"},
+    {file = "wcwidth-0.2.13.tar.gz", hash = "sha256:72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"},
+]
+
+[[package]]
 name = "wsproto"
 version = "1.2.0"
 description = "WebSockets state-machine based protocol implementation"
@@ -454,4 +511,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "49228c45c67f1ca329c0fffc57b78292b748feef62321f0a593a18e4eef183b8"
+content-hash = "480ffcb67252e8cfa3d08877469856ca644ccee1a91386513c20aed639e1d2a7"

@@ -12,7 +12,9 @@ dependencies = [
     "robotframework-appiumlibrary==2.1.0",
     "appium-python-client==3.2.1",
     "docutils==0.20.1",
-    "PyYAML==6.0.1"
+    "PyYAML==6.0.1",
+    "robotframework-yamllibrary (>=0.2.8,<0.3.0)",
+    "robotframework-debuglibrary (>=2.5.0,<3.0.0)"
 ]
 
 [build-system]

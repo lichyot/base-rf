@@ -18,7 +18,7 @@ Cenário: Realizar Pesquisa por Vídeo
 
     Access TED APP Without Login    interest=Technology    lookingFor=Professional growth
     Click In Browser Icon
-    Search Video    Tecnology
+    Search Video    Technology
     Select Search Video
     View Result Search
 
