@@ -1,0 +1,5 @@
+signIn:
+  android:
+    skipButton: SkipSignInLink
+  ios:
+    skipButton: BlaBlaBla

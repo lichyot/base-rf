@@ -1,0 +1,9 @@
+search:
+  android:
+    searchInput: xpath=//android.widget.EditText[@text="Search"]
+    resultSearch: xpath=(//android.widget.Button[@resource-id="Touchable"])[3]
+    resultText: xpath=(//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
+  ios:
+    searchInput: //android.widget.EditText[@text="Search"]
+    resultSearch: (//android.widget.Button[@resource-id="Touchable"])[2])
+    resultText: (//android.widget.Button[@resource-id="Touchable"])[2])//android.widget.TextView[@resource-id="Typography"]

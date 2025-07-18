@@ -1,0 +1,20 @@
+[project]
+name = "base-rf"
+version = "0.1.0"
+description = "A base do Robot Framework"
+authors = [
+    {name = "lichyot", email = "douglasferrs@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "robotframework>=7.3.2,<8.0.0",
+    "robotframework-appiumlibrary==2.1.0",
+    "appium-python-client==3.2.1",
+    "docutils==0.20.1",
+    "PyYAML==6.0.1"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

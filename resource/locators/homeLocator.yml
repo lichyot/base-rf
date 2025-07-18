@@ -1,0 +1,19 @@
+home:
+  android:
+    homeScreen: HomeScreen
+    homeButton: BottomTab_Home
+    discoverButton: BottomTab_Discover
+    myProfile: MyProfilePageButton
+    surpriseMeButton: BottomTab_SurpriseMe
+    myLibraryButton: BottomTab_MyLirary
+    podcastButton: BottomTab_Podcasts
+    surpriseMeButton: //android.widget.Button[@resource-id="Touchable"]
+  ios:
+    homeScreen: BlaBlaBla
+    homeButton: BlaBlaBla
+    discoverButton: BlaBlaBla
+    surpriseMeButton: BlaBlaBla
+    myLibraryButton: BlaBlaBla
+    podcastButton: BlaBlaBla
+    surpriseMeButton: BlaBlaBla
+    
