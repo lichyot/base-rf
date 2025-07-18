@@ -8,6 +8,8 @@ Test Teardown    Close All Applications
 
 *** Test Cases ***
 Cenário: Acessar Aplicativo
+    [Tags]    c1
+
     Access TED APP Without Login    interest=Technology    lookingFor=Professional growth
 
 
