@@ -20,4 +20,3 @@ Select Search Video
 
     Hide Keyboard
     Click Element    ${search.${PLATFORM_NAME}.resultSearch}
-    # Click Element    ${search.${PLATFORM_NAME}.resultSearch}

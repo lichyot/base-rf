@@ -1,0 +1,28 @@
+# Arquivos de resultado do Robot Framework
+results/
+
+# Arquivo de aplicativo Android
+resource/app/ted.apk
+
+# Arquivos de cache e ambiente virtual Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-wheel-metadata/
+.eggs/
+develop-eggs/
+dist/
+build/
+*.egg-info/
+.tox/
+.nox/
+.pytest_cache/
+.mypy_cache/
+
+# Arquivos de configuração de IDE
+.idea/
+.vscode/

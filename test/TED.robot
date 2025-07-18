@@ -28,15 +28,36 @@ Cenário: Acessar Surpreenda-me
 
     Access TED APP Without Login    interest=Technology    lookingFor=Professional growth
     Click in Surprise Me
-    Wait Until Page Contains Element    ${home.${PLATFORM_NAME}.homeButton}
+    Wait Until Page Contains Element    ${home.${PLATFORM_NAME}.surpriseMeEnga}
 
 
-Cenário: Acessar Perfil
+Cenário: Acessar Surpreenda-me & Voltar pra Home e faz Swipe para o topo
     [Tags]    c4
 
     Access TED APP Without Login    interest=Technology    lookingFor=Professional growth
-    Click in My Profile
-    Click in Sign In
-    Click in Sign In With Email
-    Click in Forgot Password
-    Return To Home Screen
+    Click in Surprise Me
+
+    Click Element    ${home.${PLATFORM_NAME}.homeButton}
+
+    Click in Profile
+    Wait Until Page Contains Element    ${home.${PLATFORM_NAME}.myProfContainer}
+
+
+Cenário: Swipe da Direita para Esquerda
+    [Tags]    c5
+
+    Access TED APP Without Login    interest=Technology    lookingFor=Professional growth
+
+    CLick in Talk - Paige Alexander
+
+    Wait Until Page Contains Element    ${home.${PLATFORM_NAME}.speakerPage}
+
+
+Cenário: Swipe da Esquerda para Direita
+    [Tags]    c6
+
+    Access TED APP Without Login    interest=Technology    lookingFor=Professional growth
+
+    CLick in Talk - Christine Schuler Deschryver
+
+    Wait Until Page Contains Element    ${home.${PLATFORM_NAME}.speakerChris}

@@ -8,6 +8,12 @@ home:
     myLibraryButton: BottomTab_MyLirary
     podcastButton: BottomTab_Podcasts
     surpriseMeButton: //android.widget.Button[@resource-id="Touchable"]
+    surpriseMeEnga: SurpriseMeEngagementBar
+    myProfContainer: MyProfileContainer
+    talkTransLive: //android.widget.TextView[@resource-id="Typography" and @text="When you inform women, you transform lives"]
+    speakerPage: //android.widget.TextView[@resource-id="Typography" and @text="Paige Alexander"]
+    talkTenets: //android.widget.TextView[@resource-id="Typography" and @text="The 5 tenets of turning pain into power"]
+    speakerChris: //android.widget.TextView[@resource-id="Typography" and @text="Christine Schuler Deschryver"]
   ios:
     homeScreen: BlaBlaBla
     homeButton: BlaBlaBla
@@ -16,4 +22,10 @@ home:
     myLibraryButton: BlaBlaBla
     podcastButton: BlaBlaBla
     surpriseMeButton: BlaBlaBla
+    surpriseMeEnga: BlaBlaBla
+    myProfContainer: BlaBlaBla
+    talkTransLive: BlaBlaBla
+    speakerPage: BlaBlaBla
+    talkTenets: BlaBlaBla
+    speakerChris: BlaBlaBla
     
