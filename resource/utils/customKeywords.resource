@@ -4,6 +4,15 @@ Resource    ../../base.resource
 Library    Collections
 
 *** Keywords ***
+Wait Until Element Is Enabled
+    [Arguments]    ${locator}
+    [Timeout]    10s
+
+    WHILE    ${True}
+        ${status}    Run Keyword And Return Status    Element Should Be Enabled    ${locator}
+        Exit For Loop If    ${status}
+    END
+
 
 Wait Visible And Click Element
     [Arguments]    ${locator}
