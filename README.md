@@ -10,21 +10,27 @@ Este projeto é uma base para automação de testes do aplicativo móvel **TED**
 ```
 base_rf/
 ├── resource/
-│   ├── app/                 # APK do app TED
-|   |── images/              # Imagem do readme
-│   ├── locators/            # Locators por tela em YAML
-│   ├── pages/               # Page Objects (keywords por tela)
-│   └── utils/               # Keywords utilitárias
-|── results/                 # Logs e relatórios de execução
+│   ├── app/
+|   |── images/
+|   |── lib/
+│   ├── locators/
+│   ├── pages/
+│   └── utils/
+|── results/
 ├──   └── log.html
 ├──   └── output.html
 ├──   └── report.html
 ├── test/
-│   └── TED.robot            # Arquivo de testes principais
-├── base.resource            # Recurso principal com imports
-├── pyproject.toml           # Configuração do Poetry
-├── poetry.lock              # Lock de dependências
+│   └── __init__.robot
+│   └── acessar-appp.robot
+│   └── acessar-surpreenda-me.robot
+│   └── pesquisar.robot
+│   └── acessar-appp.robot
+├── .env.example
 ├── .gitignore
+├── base.resource
+├── poetry.lock
+├── pyproject.toml
 |── README.md
 ```
 ---
