@@ -1,6 +1,6 @@
 lookingFor:
-  nextButton: Next
+  nextButton: xpath=//android.widget.Button[@resource-id="Next"]
   android:
-    lookingForList:  //android.widget.TextView[@resource-id="Typography" and @text="{text}"]
+    lookingForList:  xpath=//android.widget.TextView[@resource-id="Typography" and @text="{text}"]
   ios:
     lookingForList: BlaBlaBla

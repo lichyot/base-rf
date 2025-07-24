@@ -16,7 +16,7 @@ Wait Until Element Is Enabled
 Wait Visible And Click Element
     [Arguments]    ${locator}
 
-    Wait Until Element Is Visible    ${locator}
+    Wait Until Page Contains Element    ${locator}
     Click Element    ${locator}
 
 
@@ -101,3 +101,11 @@ Swipe In Any Direction Until Element Is Visible
     END
 
     Wait Until Page Contains Element    ${locator}    error=Element '${locator}' not found after ${max_swipes} swipes in the ${direction_upper} direction.
+
+
+Conditional Teardown
+    IF    '${EMULATOR}' == 'browserstack'
+        Update Test Case Status in BrowserStack
+    END
+
+    Close All Applications

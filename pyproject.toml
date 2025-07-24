@@ -3,10 +3,10 @@ name = "base-rf"
 version = "0.1.0"
 description = "A base do Robot Framework"
 authors = [
-    {name = "lichyot", email = "douglasferrs@gmail.com"}
+    { name = "lichyot", email = "douglasferrs@gmail.com" }
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4.0"
 dependencies = [
     "robotframework>=7.3.2,<8.0.0",
     "robotframework-appiumlibrary==2.1.0",
@@ -14,8 +14,13 @@ dependencies = [
     "docutils==0.20.1",
     "PyYAML==6.0.1",
     "robotframework-yamllibrary (>=0.2.8,<0.3.0)",
-    "robotframework-debuglibrary (>=2.5.0,<3.0.0)"
+    "robotframework-debuglibrary (>=2.5.0,<3.0.0)",
+    "robotframework-browserstack (>=0.1.1,<0.2.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "browserstack-sdk (>=1.30.5,<2.0.0)"
 ]
+
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

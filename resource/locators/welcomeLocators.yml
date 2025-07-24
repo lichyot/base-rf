@@ -1,2 +1,2 @@
 welcome:
-   nextButton: Next
+   nextButton: xpath=//android.widget.TextView[@resource-id="Typography" and @text="Let's go!"]

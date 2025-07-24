@@ -10,7 +10,7 @@ Search Video
 
 
 Select Search Video
-    Wait Until Element Is Visible    ${search.${PLATFORM_NAME}.resultSearch}
+    Wait Visible And Click Element    ${search.${PLATFORM_NAME}.resultSearch}
 
     ${result}    Get Text    ${search.${PLATFORM_NAME}.resultText}
     ${speaker}    ${title}    Split String    ${result}    separator=:${SPACE}
@@ -18,6 +18,4 @@ Select Search Video
     Set Test Variable    ${speaker}
     Set Test Variable    ${title}
 
-    # Hide Keyboard
-    Click Element    ${search.${PLATFORM_NAME}.resultText}
     Click Element    ${search.${PLATFORM_NAME}.resultText}

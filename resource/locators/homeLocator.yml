@@ -1,19 +1,19 @@
 home:
   android:
-    homeScreen: HomeScreen
-    homeButton: BottomTab_Home
-    discoverButton: BottomTab_Discover
-    myProfile: MyProfilePageButton
-    surpriseMeButton: BottomTab_SurpriseMe
-    myLibraryButton: BottomTab_MyLirary
-    podcastButton: BottomTab_Podcasts
-    surpriseMeButton: //android.widget.Button[@resource-id="Touchable"]
-    surpriseMeEnga: SurpriseMeEngagementBar
-    myProfContainer: MyProfileContainer
-    talkTransLive: //android.widget.TextView[@resource-id="Typography" and @text="When you inform women, you transform lives"]
-    speakerPage: //android.widget.TextView[@resource-id="Typography" and @text="Paige Alexander"]
-    talkTenets: //android.widget.TextView[@resource-id="Typography" and @text="The 5 tenets of turning pain into power"]
-    speakerChris: //android.widget.TextView[@resource-id="Typography" and @text="Christine Schuler Deschryver"]
+    homeScreen: xpath=//android.widget.ScrollView[@content-desc="Home Screen"]
+    homeButton: xpath=//android.view.View[@resource-id="BottomTab_Home"]
+    discoverButton: xpath=//android.view.View[@resource-id="BottomTab_Discover"]
+    myProfile: xpath=//android.widget.Button[@resource-id="MyProfilePageButton"]
+    surpriseMeButton: xpath=//android.widget.TextView[@resource-id="Typography" and @text="Surprise me!"]
+    myLibraryButton: xpath=//android.view.View[@resource-id="BottomTab_MyLibrary"]
+    podcastButton: xpath=//android.view.View[@resource-id="BottomTab_Podcasts"]
+    surpriseMeButton: xpath=//android.widget.Button[@resource-id="Touchable"]
+    surpriseMeEnga: xpath=//android.view.ViewGroup[@resource-id="SurpriseMeEngagementBar"]
+    myProfContainer: xpath=//android.view.ViewGroup[@content-desc="MyProfileContainer"]
+    talkTransLive: xpath=//android.widget.TextView[@resource-id="Typography" and @text="When you inform women, you transform lives"]
+    speakerPage: xpath=//android.widget.TextView[@resource-id="Typography" and @text="Paige Alexander"]
+    talkTenets: xpath=//android.widget.TextView[@resource-id="Typography" and @text="The 5 tenets of turning pain into power"]
+    speakerChris: xpath=//android.widget.TextView[@resource-id="Typography" and @text="Christine Schuler Deschryver"]
   ios:
     homeScreen: BlaBlaBla
     homeButton: BlaBlaBla

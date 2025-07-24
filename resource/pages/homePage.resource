@@ -4,7 +4,7 @@ Resource    ../../base.resource
 
 *** Keywords ***
 View Home
-    Wait Until Element Is Visible    ${home.${PLATFORM_NAME}.homeScreen}
+    Wait Until Page Contains Element    ${home.${PLATFORM_NAME}.homeScreen}
 
 
 Click In Browser Icon

@@ -1,6 +1,6 @@
 interest:
-  nextButton: Next
+  nextButton: xpath=//android.widget.Button[@resource-id="Next"]
   android:
-    interestList: //android.widget.TextView[@resource-id="Typography" and @text="{text}"]
+    interestList: xpath=//android.widget.TextView[@resource-id="Typography" and @text="{text}"]
   ios:
     interestList: BlaBlaBla

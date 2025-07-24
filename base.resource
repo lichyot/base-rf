@@ -2,9 +2,10 @@
 
 ### Biblioteca
 Library    String
-Library    YamlLib
 Library    DebugLibrary
+Library    resource/lib/DotEnv.py
 Library    AppiumLibrary    timeout=30
+Library    BrowserstackLibrary    username=%{BS_USERNAME}    access_key=%{BS_ACCESS_KEY}
 
 ### Utils
 Resource    resource/utils/openApp.resource
@@ -31,5 +32,15 @@ Resource    resource/pages/searchPage.resource
 Resource    resource/pages/resultSearchPage.resource
 
 
+
 *** Variables ***
-${PLATFORM_NAME}    android
+# Configurações BrowserStack
+${BS_BUILD_NAME}       TED
+${BS_PROJECT_NAME}     RF Mobile
+${EMULATOR}            browserstack    # browserstack || local
+
+# Configurações do Dispositivo
+${OS_VERSION}          13.0
+${PLATFORM_NAME}       android
+${DEVICE_NAME}         Google Pixel 7
+${APP_URL}             bs://a3c064f995b68e06b8fa6ec28780d97c5ac46033

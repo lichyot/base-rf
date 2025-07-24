@@ -94,13 +94,13 @@ Antes de começar, instale os seguintes softwares:
 ### ▶️ Executar Todos os testes
 
 ```bash
-poetry run robot -d results/ test/TED.robot
+poetry run robot -d results/ -v EMULATOR:local test/TED.robot
 ```
 
 ### 🔖 Executar testes com tags
 
 ```bash
-poetry run robot -d results/ -i c2 test/TED.robot
+poetry run robot -d results/ -v EMULATOR:local -i c2 test/TED.robot
 ```
 
 ### 🍏 Rodar testes no iOS
@@ -109,6 +109,12 @@ poetry run robot -d results/ -i c2 test/TED.robot
 
 ```bash
 poetry run robot -v PLATFORM_NAME:ios -d results/ -i c6 test/TED.robot
+```
+
+### ⚠️ Executar Todos os testes na Browserstack
+
+```bash
+poetry run robot -d results/ -v EMULATOR:local .
 ```
 
 ---
